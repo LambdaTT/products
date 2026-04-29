@@ -9,10 +9,10 @@ class CreatetableCtpCategory extends Migration
 {
   public function apply()
   {
-    $this->Table('CTP_CATEGORY')
+    $this->Table('PRD_CATEGORY')
 
       // Fields
-      ->id('id_ctp_category')
+      ->id('id_prd_category')
       ->string('ds_key', 17)
       ->datetime('dt_created')->setDefaultValue(DbVocab::SQL_CURTIMESTAMP())
       ->datetime('dt_updated')->nullable()->setDefaultValue(null)

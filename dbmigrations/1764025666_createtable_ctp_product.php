@@ -9,9 +9,9 @@ class CreatetableCtpProduct extends Migration
 {
   public function apply()
   {
-    $this->Table('CTP_PRODUCT')
+    $this->Table('PRD_PRODUCT')
       // Fields
-      ->id('id_ctp_product')
+      ->id('id_prd_product')
       ->string('ds_key', 17)
       ->datetime('dt_created')->setDefaultValue(DbVocab::SQL_CURTIMESTAMP())
       ->datetime('dt_updated')->nullable()->setDefaultValue(null)

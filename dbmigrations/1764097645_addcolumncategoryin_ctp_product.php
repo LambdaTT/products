@@ -9,12 +9,12 @@ class AddcolumncategoryinCtpProduct extends Migration
 {
   public function apply()
   {
-    $this->Table('CTP_PRODUCT')
-      ->fk('id_ctp_category')->nullable()->setDefaultValue(null)
+    $this->Table('PRD_PRODUCT')
+      ->fk('id_prd_category')->nullable()->setDefaultValue(null)
 
-      ->Foreign('id_ctp_category')
-      ->references('id_ctp_category')
-      ->atTable('CTP_CATEGORY')
+      ->Foreign('id_prd_category')
+      ->references('id_prd_category')
+      ->atTable('PRD_CATEGORY')
       ->onUpdate(DbVocab::FKACTION_CASCADE)
       ->onDelete(DbVocab::FKACTION_SETNULL)
 

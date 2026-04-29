@@ -6,7 +6,7 @@ use SplitPHP\Service;
 
 class Category extends Service
 {
-  private const TABLE = "CTP_CATEGORY";
+  private const TABLE = "PRD_CATEGORY";
 
   public function create($data)
   {

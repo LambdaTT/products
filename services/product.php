@@ -6,7 +6,7 @@ use SplitPHP\Service;
 
 class Product extends Service
 {
-  private const TABLE = "CTP_PRODUCT";
+  private const TABLE = "PRD_PRODUCT";
 
   public function create($data)
   {
@@ -20,7 +20,7 @@ class Product extends Service
         'do_active',
         'do_requires_preparation',
         'do_order_progress',
-        'id_ctp_category'
+        'id_prd_category'
       ]
     );
 
@@ -80,7 +80,7 @@ class Product extends Service
         'do_active',
         'do_requires_preparation',
         'do_order_progress',
-        'id_ctp_category'
+        'id_prd_category'
       ]
     );
 
